@@ -1,0 +1,39 @@
+{
+  "name": "hobnob",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf build/ && npx babel src -d dist",
+    "serve": "yarn run build && node dist/index.js",
+    "watch": "nodemon -w src --exec yarn run serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src",
+    "fix": "eslint src --fix",
+    "precommit": "yarn run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PoojeshShetty/javascript-test.git%1B%5BH%1B%5BC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PoojeshShetty/javascript-test.git%1B%5BH%1B%5BC/issues"
+  },
+  "homepage": "https://github.com/PoojeshShetty/javascript-test.git%1B%5BH%1B%5BC#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "husky": "^7.0.4",
+    "nodemon": "^2.0.15",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  }
+}
