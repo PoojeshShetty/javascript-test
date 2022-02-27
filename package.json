@@ -36,5 +36,10 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "yarn": "^1.22.17"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run lint"
+    }
   }
 }
